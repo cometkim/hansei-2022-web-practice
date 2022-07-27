@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="./index.css">
+    <title>TodoMVC</title>
+  </head>
+
+  <body>
+    <header>
+      <h1>todos</h1>
+    </header>
+
+    <main>
+      <form id="todo-form">
+        <input id="todo-toggle" type="checkbox">
+        <input id="todo-input" name="todo-input" type="text">
+      </form>
+
+      <div>
+        <button id="clear-completed">
+          Clear Completed
+        </button>
+      </div>
+
+      <ul id="todo-list">
+      </ul>
+
+      <div>
+        <ul>
+          <li>
+            <a href="#">
+              All
+            </a>
+          </li>
+          <li>
+            <a href="#active">
+              Active
+            </a>
+          </li>
+          <li>
+            <a href="#completed">
+              Completed
+            </a>
+          </li>
+        </ul>
+      </div>
+    </main>
+
+    <footer>
+      <a href="mailto:hey@hyeseong.kim">
+        개발자: 김혜성
+      </a>
+    </footer>
+
+    <template id="todo-item-template">
+      <li class="todo-item">
+        <p></p>
+        <input type="checkbox">
+        <button>Delete</button>
+      </li>
+    </template>
+
+    <script type="module" src="./index.js" defer="true"></script>
+  </body>
+</html>
